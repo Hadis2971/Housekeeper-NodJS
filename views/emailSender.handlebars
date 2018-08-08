@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Housekeeper App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 class="display-6 text-center mb-4" style="color:#008ae6;font-weight:300;">Email Sender</h1>
+        {{msg}}
+        <form id="email-form" method="POST" action="/email/send">
+            <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Your Message</span>
+            </div>
+            <textarea name="emailMsg" class="form-control" aria-label="With textarea"></textarea>
+            </div>
+            <div class="input-group mb-3">
+            <input name="recipientsEmail" id="recipientsEmail" type="text" class="form-control" placeholder="Recipient's Email Address" aria-label="Recipient's Email Address" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@Email Address</span>
+            </div>
+            </div>
+            <button type="submit" class="btn btn-success">Send Email!</button>
+        </form>
+    <script src="/scripts/emailValid.js"></script>    
+    </body>
+</html>

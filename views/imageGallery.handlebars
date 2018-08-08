@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Housekeeper App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/styles/imageGallery.css">
+    </head>
+    <body>
+        <h1 class="display-6 text-center mb-4" style="color:#008ae6;font-weight:300;">Image Gallery</h1>
+        <div id="add-image-box" style="max-width:40%;margin:auto;">
+             <form id="frmUploader" enctype="multipart/form-data" action="/gallery/images" method="post">
+             <div class="custom-file mb-3">
+                 <input class="custom-file-input" type="file" id="imgUploader" name="imgUploader"/>
+                 <label for="imgUploader" class="custom-file-label"></label>
+             </div>
+             <input class="btn btn-primary btn-block" type="submit" name="submit" id="btnSubmit" value="Upload" /> </form>
+        </div>
+        <hr>
+            <div class="modal">
+                <span id="close-modal">&times;</span>
+                <img src="" class="modal-img img-fluid">
+            </div>
+            {{#each files}}
+            <div class="card card-body mb-3 card-box">
+                <img data-toggle="tooltip" data-placement="top" title="Click To See Full Image" src="/gallery/images/{{this.filename}}" class="card-img img-fluid">
+                <form method="POST" action="/gallery/images/{{this._id}}?_method=DELETE">
+                    <button class="btn btn-danger mt-3">Delete</button>
+                </form>
+            </div>
+            {{/each}}
+    <script src="/scripts/jQuery.js"></script>        
+    <script src="/scripts/imageGallery.js"></script>        
+    </body>
+</html>

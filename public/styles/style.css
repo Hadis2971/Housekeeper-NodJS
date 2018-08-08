@@ -1,0 +1,44 @@
+*{
+    font-family: 'Raleway', Arial, Helvetica, 'Times New Roman', Times, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    margin: 0em;
+    padding: 0em;
+    overflow-x: hidden;
+    background-color: #F5F5F5;
+}
+
+.container{
+    box-sizing: border-box;
+    padding: 3%;
+}
+
+.nav-link{
+    color: #666;
+    height: 2em;
+}
+
+.nav-link:hover{
+    border-bottom: 0.02em solid #008ae0;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,138,230, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.custom-toggler.navbar-toggler {
+    border-color: rgb(0,138,230);
+}
+
+@media only screen and (max-width: 700px){
+    .nav-link{
+        font-size: 150%;
+    }
+}

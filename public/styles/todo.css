@@ -1,0 +1,88 @@
+#todo-box{
+    display: inline-block;
+    width: 45%;
+    box-sizing: border-box;
+    padding: 4.7%;
+    margin: 3% 3% 0% 0%;
+    border: 0.02em solid #008ae6;
+}
+
+.list-box-style{
+    position: relative;
+    display: inline-block;
+    width: 45%;
+    max-height: 14.4em;
+    box-sizing: border-box;
+    padding: 2% 4.7% 4.7% 4.7%;
+    margin: 3% 3% 0% 0%;
+    border: 0.02em solid #008ae6;
+    vertical-align: top;
+    overflow-y: auto;
+}
+
+.list-ul-style{
+    list-style-type: none;
+    padding: 0em;
+}
+
+.btn-primary{
+    margin-left: 0.3%;
+}
+
+.list-input-div{
+    width: 95%;
+}
+
+.list-item-style{
+    position: relative;
+    margin: 1em 0%;
+    padding: 0.5em;
+    border-bottom: 0.01em solid #008ae6;
+}
+
+.list-img{
+    position: absolute;
+    max-width: 1.85em;
+    cursor: pointer;
+}
+
+.first-img{
+    right: 0.3em;
+    bottom: 0.1em;
+}
+
+.second-img{
+    right: 3.5em;
+    bottom: 0.1em;
+}
+
+.title-style{
+    color: #008ae6;
+    font-weight: 300;
+}
+
+.completed-task{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.close{
+    position: absolute;
+    right: 0.3em;
+    top: 0.1em;
+    font-size: 200%;
+}
+
+@media only screen and (max-width: 800px){
+    #todo-box{
+        display: block;
+        width: 95%;
+        margin: 3% auto;
+    }
+    
+    .list-box-style{
+        display: block;
+        width: 95%;
+        margin: 3% auto;
+    }
+}

@@ -1,0 +1,58 @@
+.card-box{
+    width: 23%;
+    max-height: 25em;
+    display: inline-block;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px){
+    .card-box{
+        width: 45%;
+        max-height: 35em;
+        display: inline-block;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .card-box{
+        width: 90%;
+        max-height: 45em;
+        display: block;
+        margin: auto;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.modal-img{
+    display: block;
+    margin: 3% auto;
+}
+
+#close-modal{
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    font-size: 3.5em;
+    color: #FFF;
+    cursor: pointer;
+}
+
